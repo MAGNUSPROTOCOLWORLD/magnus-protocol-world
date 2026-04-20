@@ -10,12 +10,15 @@ import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { getLocaleFromPathname } from "@/lib/locale";
 
+const footerLinks = [];
+
 export function Footer() {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const content = getCmsContent(locale);
 
   return (
+
     <footer className="border-t border-gold/20 bg-carbon">
       <section className="site-grid py-14">
         <div className="rounded-card border border-gold/25 bg-gradient-to-br from-carbon to-obsidian p-8 sm:p-10">
@@ -107,7 +110,7 @@ export function Footer() {
           "@type": "Organization",
           name: siteConfig.shortName,
           url: siteConfig.domain,
-          email: footerLinks.email
+       
         })}
       </script>
     </footer>
