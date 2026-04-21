@@ -43,7 +43,7 @@ export const footerLinks = {
   ],
   description:
     "Magnus Protocol is a global technology ecosystem building secure, scalable intelligence infrastructure for long-term institutional impact.",
-  email: "contact@magnusprotocol.com",
+  email: "contact@magnusprotocol.world",
   copyright: "(C) 2026 MAGNUS PROTOCOL. All rights reserved."
 };
 
