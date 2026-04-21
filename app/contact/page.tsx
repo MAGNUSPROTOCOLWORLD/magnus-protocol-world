@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="space-y-4">
             <SurfaceCard
               title={contact.cards.generalContactTitle}
-              description="contact@magnusprotocol.com"
+              description="contact@magnusprotocol.world"
               className="bg-gradient-to-br from-carbon to-obsidian"
             />
             <SurfaceCard
