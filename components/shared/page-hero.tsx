@@ -46,7 +46,11 @@ export function PageHero({
           </div>
           <div className="justify-self-start lg:justify-self-end">
             <div className="relative h-56 w-56 overflow-hidden rounded-[1.4rem] border border-gold/30 bg-obsidian shadow-[0_16px_46px_rgba(0,0,0,0.34)] sm:h-64 sm:w-64">
-              <Image src={artworkSrc} alt={artworkAlt} fill sizes="(min-width: 640px) 256px, 224px" className="object-cover object-center" />
+              <Image src={artworkSrc} 
+                alt={artworkAlt} 
+                fill 
+                className="object-contain p-3"
+                sizes="(min-widht: 640px) 224px, 224px"
             </div>
           </div>
         </div>
