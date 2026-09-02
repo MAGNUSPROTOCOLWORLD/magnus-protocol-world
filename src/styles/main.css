@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050806;
+  color: #eef7f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 6%;
+  background: rgba(5,8,6,.94);
+  border-bottom: 1px solid #163c21;
+  backdrop-filter: blur(18px);
+}
+
+.domain {
+  color: #42ff72;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.product {
+  color: #8fa996;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #a9b7ac;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #42ff72;
+}
+
+.hero {
+  min-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 8%;
+  background:
+    radial-gradient(circle at 75% 35%,
+      rgba(24,255,90,.13), transparent 32%);
+}
+
+.badge,
+.section-label {
+  color: #42ff72;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  max-width: 850px;
+  font-size: clamp(55px, 8vw, 105px);
+  line-height: .92;
+  letter-spacing: -5px;
+}
+
+.hero h1 span {
+  color: #42ff72;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin-top: 30px;
+  color: #9aac9e;
+  font-size: 19px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.primary,
+.secondary {
+  padding: 15px 24px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.primary {
+  background: #42ff72;
+  color: #020503;
+}
+
+.secondary {
+  border: 1px solid #285e35;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border-top: 1px solid #17361f;
+  border-bottom: 1px solid #17361f;
+}
+
+.stats div {
+  padding: 30px;
+  text-align: center;
+  border-right: 1px solid #17361f;
+}
+
+.stats strong {
+  display: block;
+  color: #42ff72;
+  font-size: 21px;
+}
+
+.stats span {
+  color: #788b7d;
+  font-size: 12px;
+}
+
+.section {
+  padding: 100px 8%;
+}
+
+.section h2 {
+  max-width: 800px;
+  font-size: clamp(35px,5vw,65px);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.section-intro,
+.about {
+  max-width: 750px;
+  margin-top: 25px;
+  color: #91a396;
+  font-size: 18px;
+}
+
+.product-grid,
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+  margin-top: 55px;
+}
+
+.product-card,
+.technology-grid article {
+  padding: 28px;
+  background: #09100b;
+  border: 1px solid #173b21;
+  border-radius: 12px;
+}
+
+.placeholder {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+  background:
+    radial-gradient(circle,
+      rgba(66,255,114,.15), transparent 60%);
+  border: 1px solid #153b20;
+  color: #42ff72;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.product-card p,
+.technology-grid p {
+  margin-top: 12px;
+  color: #7e9082;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 20px;
+  color: #42ff72;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dark-section {
+  background: #020403;
+}
+
+.technology-grid {
+  grid-template-columns: repeat(4,1fr);
+}
+
+.technology-grid article span {
+  color: #42ff72;
+  font-weight: 900;
+}
+
+.contact {
+  border-top: 1px solid #17361f;
+}
+
+footer {
+  padding: 55px 8%;
+  border-top: 1px solid #17361f;
+  color: #728176;
+}
+
+footer strong,
+footer span {
+  display: block;
+}
+
+footer strong {
+  color: #42ff72;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+footer p {
+  max-width: 800px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+@media(max-width:900px) {
+
+  .topbar {
+    display: block;
+  }
+
+  nav {
+    margin-top: 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .stats,
+  .product-grid,
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================
+   MAGNUSPROTOCOL.WORLD — INTERNAL PAGES
+   ========================================== */
+
+.legal-page {
+  min-height: 70vh;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.legal-content {
+  max-width: 900px;
+  margin-top: 45px;
+  color: #9aac9e;
+  font-size: 17px;
+}
+
+.legal-content > p {
+  margin-bottom: 30px;
+}
+
+.legal-box {
+  padding: 28px;
+  margin: 18px 0;
+  background: #09100b;
+  border: 1px solid #173b21;
+  border-radius: 12px;
+}
+
+.legal-box h3 {
+  color: #42ff72;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.legal-box p {
+  color: #91a396;
+}
