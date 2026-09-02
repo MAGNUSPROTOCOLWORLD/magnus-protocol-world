@@ -322,3 +322,70 @@ footer p {
 .legal-box p {
   color: #91a396;
 }
+
+
+/* =====================================================
+   DRACO CORRAL & MAGNUS — SALES AI
+   HERO BRAND MARK
+   ===================================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-logo {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(42vw, 650px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 30px rgba(0,255,80,.08));
+}
+
+/* mantém o conteúdo textual na metade esquerda */
+.hero > .badge,
+.hero > h1,
+.hero > .hero-text,
+.hero > .actions {
+    position: relative;
+    z-index: 3;
+    max-width: 52%;
+}
+
+@media (max-width: 1000px) {
+    .hero-logo {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: min(90%, 520px);
+        margin: 55px auto 0;
+    }
+
+    .hero > .badge,
+    .hero > h1,
+    .hero > .hero-text,
+    .hero > .actions {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-logo {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
